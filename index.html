@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>My Portfolio</title>
+    <script>
+        function loadPage() {
+            var path = window.location.pathname;
+            var framerBaseURL = "https://mumer-portfolio.framer.website"; // Change this to your actual Framer site
+
+            if (path.includes("projects")) {
+                document.getElementById("frame").src = framerBaseURL + "/projects";
+            } else if (path.includes("services")) {
+                document.getElementById("frame").src = framerBaseURL + "/services";
+            } else {
+                document.getElementById("frame").src = framerBaseURL;
+            }
+        }
+    </script>
+</head>
+<body onload="loadPage()">
+    <iframe id="frame" width="100%" height="100%" frameborder="0"></iframe>
+</body>
+</html>
