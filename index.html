@@ -1,19 +1,22 @@
 <html>
 <head>
     <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for mobile responsiveness -->
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
+            overflow: hidden; /* Prevent scrolling of the body */
         }
 
         iframe {
             margin: 0;
             padding: 0;
             border: none; /* Ensure no border around the iframe */
-            width: 100vw; /* Full width */
-            height: 100vh; /* Full height */
+            width: 100%; /* Make the iframe width 100% of the parent */
+            height: 100vh; /* Full height to fit screen size */
+            display: block; /* Remove any unwanted spacing around the iframe */
         }
     </style>
     <script>
